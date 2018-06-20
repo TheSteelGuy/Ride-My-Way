@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,24 @@
     <script src="main.js"></script>
     <title>Create Ride</title>
 </head>
+
 <body>
-    <div id="all_rides"><!--begin all rides-->
+    <div id="all_rides">
+        <!--begin all rides-->
         <div id="header">
             <ul>
-              <li><a class="active"href="../index.html">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li style="float: right;"><a href="../index.html">Logout</a></li>
-              <li style="float: right;"><a href="profile.html">My Profile</a></li>
+                <li>
+                    <a class="active" href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li style="float: right;">
+                    <a href="../index.html">Logout</a>
+                </li>
+                <li style="float: right;">
+                    <a href="profile.html">My Profile</a>
+                </li>
             </ul>
         </div>
         <div id="body" style="border: 3px solid green">
@@ -24,7 +35,7 @@
                     <h2>Available Rides Offers!</h2>
                     <img src="images/img3.png" width="320px" height="200">
                     <button onclick="details()">Details</button>
-                    <button >Join</button>
+                    <button>Join</button>
                     <img src="images/img5.png" width="320px" height="200">
                     <button onclick="details()">Details</button>
                     <button>Join</button>
@@ -35,12 +46,14 @@
                 <div class="column">
                     <h2>My Ride Offers!</h2>
                     <img src="images/img4.png" width="320px" height="200">
-                    <a href="joinrequest.html"><button>Join Requests</button></a>
+                    <a href="joinrequest.html">
+                        <button>Join Requests</button>
+                    </a>
                     <img src="images/img4.png" width="320px" height="200">
                     <button>Join Requests</button>
                     <img src="images/img4.png" width="320px" height="200">
                     <button>Join Requests</button>
-                    
+
                 </div>
                 <div class="column">
                     <div id="ride_form">
@@ -53,14 +66,15 @@
                             <label for="time">Time Of Depature</label>
                             <input type="text" name="area" placeholder="Time Of Departure" required>
                             <label for="location">Meeting Point</label>
-                            <input type="text"  placeholder="Where To Meet Passangers" required>
+                            <input type="text" placeholder="Where To Meet Passangers" required>
                             <label for="Charges">Charges</label>
                             <input type="number" placeholder="Charges">
                             <input type="submit" value="Sign Up">
                         </form>
-                   </div>
-               </div>
-            </div><!--end row-->
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
             <div class="row">
                 <div class="column">
 
@@ -68,11 +82,16 @@
                 <div class="column">
 
                 </div>
-            </div><!--end row-->
-        </div><!--end body-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end body-->
         <div id="footer" style="position: relative;">
             <p>&copy Ridemyway.All rights reserved </p>
         </div>
-    </div><!--end of all_rides-->
+    </div>
+    <!--end of all_rides-->
 </body>
+
 </html>
+
