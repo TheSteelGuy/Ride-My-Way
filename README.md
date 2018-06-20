@@ -20,6 +20,9 @@ and passengers to join available ride offers. This projcect therefore implemnts 
 * Clone the repo ```git clone url of the ghpages```
 * run index.html on your favourite browser
 
+* The user interfaces are live at : 
+https://thesteelguy.github.io/Ride-My-Way/
+
 
 
 
