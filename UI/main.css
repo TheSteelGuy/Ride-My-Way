@@ -24,7 +24,9 @@ body, html{
     height: 70px;/* height of footer*/
     background-color: #333;
     text-align: center;
-}
+    color:white;
+    padding-top:15px;
+} 
 ul{
     overflow: hidden;
     list-style-type: none;
