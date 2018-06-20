@@ -210,4 +210,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 }
 #joinrequests a{
     text-decoration: none;
+    padding-right: 10px;
+    color: white;
+    float: left;
 }
