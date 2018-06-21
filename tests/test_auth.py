@@ -25,12 +25,47 @@ class Testbase(TestCase):
         }
 
 class TestAuth(Testbase):
-    """tests user authentication methods"""
-    def test_registration(self):
+    '''tests user authentication methods'''
+    def test_signup(self):
         """test tregistaration"""
         response = self.client.post(
-            '/signup',
+            '/api/v1/signup',
             data=json.dumps(self.register_user),
             content_type='application/json'
         )
         self.assertEqual(response.status_code, 201)
+
+
+    def test_login(self):
+        '''tests if a user can log in'''
+        self.client.post(
+           'auth/api/v1/signup',
+           data=json.dumps(self.register_user),
+           content_type='application/json'
+        )
+        sigin = self.cliet.post(
+            'auth/api/v1/signin',
+            data=json.dumps(self.login_user),
+            content_type='application/json'
+        )
+        self.assertIn('login susccesful', str(login.data)) 
+
+
+    def test_logout(self):
+        '''tests_user logout'''
+        
+        signup = self.client.post(
+            'auth/api/v1/register',
+            data=json.dumps(self.register_user),
+            content_type='application/json'
+        )   
+        self.assertEqual(signup.status_code,201) 
+        self.data_ = json.loads(signup.data.decode())
+        self.assertEqual(self.data_['message'],'registration successfull')
+
+        logout = self.client.post(
+            'auth/api/v1/logout',
+            content_type='application/json'
+        )
+        res = json.loads(logout.data.decode())
+        self.assertIn('successfully logged out', res['message'])
