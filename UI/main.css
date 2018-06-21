@@ -24,6 +24,8 @@ body, html{
     height: 70px;/* height of footer*/
     background-color: #333;
     text-align: center;
+    color:white;
+    padding-top:20px; 
 }
 ul{
     overflow: hidden;
@@ -163,11 +165,16 @@ input[type=text], select {
     margin-left: 19px;
     margin-top: 9px;
     margin-bottom: 10px;
-    background-color: blue;
     color: white;
     border-radius: 4px;
     cursor: pointer;
     padding: 6px;
+}
+button{
+    background-color: blue;
+}
+.reject{
+    background-color: brown;
 }
 #ride_form{
     margin-top: 18px;
@@ -193,7 +200,9 @@ td{
     color: brown;
     background-color: #ccc;
 }
-
+#reject{
+    background-color: brown
+}
 
 tr:nth-child(even){background-color: #f2f2f2}
 #table{
@@ -213,4 +222,13 @@ tr:nth-child(even){background-color: #f2f2f2}
     padding-right: 10px;
     color: white;
     float: left;
+}
+#nav{
+    text-decoration:none; color:brown;
+}
+a {
+    text-decoration: none;
+}
+#right{
+    float: right;
 }
