@@ -115,7 +115,7 @@ li a:active{
     }
 }
 
-input[type=submit]{
+input[type=button]{
     width:40%;
     background-color: #4CAF50;
     padding-top: 10px;
