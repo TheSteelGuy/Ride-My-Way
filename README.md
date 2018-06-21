@@ -1,4 +1,5 @@
 # Ride-My-Way
+[![Build Status](https://travis-ci.org/TheSteelGuy/Ride-My-Way.svg?branch=chore-test-%23158520636)](https://travis-ci.org/TheSteelGuy/Ride-My-Way)
 
 ### Introduction
 Ride-my-Way App is a carpooling application that provides drivers with the ability to create ride offers 
