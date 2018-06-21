@@ -10,24 +10,25 @@ auth_blueprint = Blueprint('auth', __name__)
 
 
 
-class AuthenticationView(MethodView):
-    users = []
-    ''' a view class with all authentication methods '''
+class SignUp(MethodView):
+    ''' a view class for sign up'''
     def post(self):
         ''' class method which allows user to sign up'''
-        username = request.json.get('username')
-        phone = request.json.get('phone')
-        password = request.json.get('password')
-        confirm_password = request.json.get('confirm_password')
-        user = User(username, phone, password, confirm_password)
-        if password != confirm_password:
-            return make_response(jsonify(
-                {'message': 'Ensure password and confirm password matches.'}
-            )), 409
-        users.append(user)
-        return make_response(jsonify(
-            {'message': 'Welcome, to ridemyway{}'.format(user.username)}
-        )), 201
+
+class SignIn(MethodView):
+    ''' a view class for signin'''
+    def post(self):
+        ''' class method which allows user to sign in'''
+
+class Logout(MethodView):
+    ''' a view class for logout '''
+    def post(self):
+        ''' class method which allows user to sign out'''
+
 
 auth_blueprint.add_url_rule(
-    '/signup', view_func=AuthenticationView.as_view('signup'), methods=['POST'])
+    '/auth/api/v1/signup', view_func=SignUp.as_view('signup'), methods=['POST'])
+auth_blueprint.add_url_rule(
+    '/auth/api/v1/signin', view_func=SignIn.as_view('signin'), methods=['POST'])
+auth_blueprint.add_url_rule(
+    '/auth/api/v1/logout', view_func=Logout.as_view('logout'), methods=['POST'])
