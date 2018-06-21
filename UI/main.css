@@ -248,4 +248,8 @@ a {
 #right{
     float: right;
 }
-
+.column {
+    min-width: 250px; /* Minimum width of your wrapper element */
+    overflow: hidden;
+    display: inline-block;
+  }
