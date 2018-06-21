@@ -6,5 +6,4 @@ from flask.views import MethodView
 # local imports
 from models.user import User
 
-user_blueprint = Blueprint('user', __name__)
-
+auth_blueprint = Blueprint('auth', __name__)
