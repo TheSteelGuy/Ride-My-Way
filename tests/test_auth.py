@@ -69,3 +69,4 @@ class TestAuth(Testbase):
         )
         res = json.loads(logout.data.decode())
         self.assertIn('successfully logged out', res['message'])
+
