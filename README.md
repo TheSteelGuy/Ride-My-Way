@@ -17,8 +17,7 @@ and passengers to join available ride offers. This projcect therefore implemnts 
 * Browser
 
 #### Getting Started
-* Clone the repo ```git clone url of the ghpages```
-* run index.html on your favourite browser
+* Clone the repo ```git clone url of the this branch```
 
 
 
