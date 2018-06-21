@@ -1,35 +1,65 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <title>Sign Up</title>
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <a id="nav" href="../index.html">Go back Home</a>
-    <div id="form">
-        <div class="form_title">
-            <h3>Signup Details Here</h3>
+    <div id="wrapper">
+        <!--begin wrapper-->
+        <div id="header">
+            <ul>
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="available_rides.html">Available Rides</a>
+                </li>
+                <li id="right">
+                    <a href="signup.html">Sign Up</a>
+                </li>
+                <li id="right">
+                    <a href="login.html">Sign In</a>
+                </li>
+            </ul>
         </div>
-        <form action="" method="POST">
-            <label for="fname">First Name</label>
-            <input type="text" name="fname" placeholder="Enter Your Firstname" required>
-            <label for="phone">Phone Contact</label>
-            <input type="number" name="phone" placeholder="Enter Your Phone number" required>
-            <label for="password">Password</label>
-            <input type="password" name="pwd" placeholder="Enter Your Password" required>
-            <label for="password">Confirm Password</label>
-            <input type="password" name="cpwd" placeholder="Confirm Your Password" required>
-            <p>Already a member?
-                <a href="login.html">Login</a>
-            </p>
-            <input type="submit" value="Sign Up">
-        </form>
+        <div id="body">
+            <div class="intr">
+                <div id="form">
+                    <div class="form_title">
+                        <h3>Login Details Here</h3>
+                    </div>
+                    <form action="" method="POST">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" required>
+                        <label for="phone">Phone Contact</label>
+                        <input type="number" name="phone" required>
+                        <label for="password">Password</label>
+                        <input type="password" name="pwd" required>
+                        <label for="password">Confirm Password</label>
+                        <input type="password" name="cpwd" required>
+                        <p>Already a member?
+                            <a href="login.html">Login</a>
+                        </p>
+                        <input type="submit" value="Sign Up">
+                    </form>
+            </div>
+        </div>
+        <div id="footer">
+            <p>&copy Ridemyway.All rights reserved </p>
+        </div>
     </div>
+    <!--end of wrapper-->
 </body>
 
 </html>
