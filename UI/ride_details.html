@@ -10,7 +10,7 @@
     <script src="main.js"></script>
 </head>
 
-<body>
+<body onload="populate()">
     <div id="ride_desc">
         <!--begin wrapper-->
         
@@ -44,15 +44,18 @@
                                 <b>Join ride</b>
                             </div>
                     </div>  
-                <h1>Ride Details</h1>
+                <h1 onload="change(this)">Ride Detail</h1>
                <p align="left">
-                 <h4>Last Stop:</h4>Kisumu
-                 <h4>Date:</h4>28/6/2018
-                 <h4>Time of departure:</h4>6.00am
-                 <h4>Meeting Point:</h4> Mombasa. Kilifi Brand Hotel, next to Gorgr mark
-                 <h4>Charges:</h4> 2300/-
-                </p>           
+                 <h4>Last Stop:</h4><p id="stop"></p>
+                 <h4>Date:</h4><p id="date"></p>
+                 <h4>Time of departure:</h4><p id="departure"></p>
+                 <h4>Meeting Point:</h4><p id="meet"></p>
+                 <h4>Charges:</h4><p id="charges"></p>
+                </p>       
             </div>
+            <script>
+
+            </script>
         </div>
         <div id="footer">
             <p>&copy Ridemyway.All rights reserved </p>

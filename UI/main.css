@@ -314,4 +314,9 @@ a {
 .card a{
     color: wheat;
 }
+#alert{
+    color:  brown;
+    padding-top: 8px;
+    margin-left: 4px;  
+}
 
